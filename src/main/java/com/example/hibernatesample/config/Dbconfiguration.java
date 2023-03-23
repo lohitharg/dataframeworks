@@ -14,10 +14,10 @@ public class Dbconfiguration {
     public DataSource dataSource() {
         return DataSourceBuilder
                 .create()
-                .username("lohitha")
+                .username("postgres")
                 .password("lohitha")
-                .url("")
-                .driverClassName("")
+                .url("jdbc:postgresql://localhost:5432/hdb")
+                .driverClassName("org.postgresql.Driver")
                 .build();
     }
 }
